@@ -38,12 +38,17 @@ To run this application locally, follow these steps:
    pip install -r requirements.txt
    ```
 
-5. Create a `.env` file in the root directory and add your OpenAI API key and database URL:
+5. **Set Up Secrets**:
+   - Rename the `secrets.toml.template` file to `secrets.toml`.
+   - Fill in your API keys in the `secrets.toml` file as follows:
 
-   ```dotenv
-   OPENAI_API_KEY=your-openai-api-key-here
-   DATABASE_URL=postgresql://username:password@host:port/database
-   ```
+     ```toml
+     # secrets.toml
+
+     OPENAI_API_KEY = "YOUR_KEY_HERE"
+     OPENWEATHERMAP_API_KEY = "YOUR_KEY_HERE"
+     NEWSAPI_API_KEY = "YOUR_KEY_HERE"
+     ```
 
 6. Run the application:
 
