@@ -6,9 +6,7 @@ from src.utils.logger import logger
 
 
 def main():
-    logo_path = os.path.join("assets", "logo.png")
-    # st.image(logo_path)
-    st.image(logo_path, width=200)
+    st.image(os.path.join("assets", "logo.png"), width=200)
 
     st.title("Dialogent")
     st.subheader("Showcase Chat Application for Agentic behavior through function calling")
@@ -36,4 +34,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # _main_form()
